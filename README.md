@@ -23,14 +23,15 @@ In the future, I hope to create (or help to create) a new version of this tool w
 3. Rename the .wbfs file to "**spm.wbfs**"
 4. Download this repository (and extract it if you need to), or clone it:
 ```shell
-git clone https://github.com...........
+git clone https://github.com/BraidenPsiuk/spm-level-dumper.git
 ```
 5. Move your **spm.wbfs** file into the root of the repository
-6. Set permissions on bin-utils:
+6. Open the repo using a terminal (**cd** into it)
+7. Set the following permissions on bin-utils:
 ```shell
 sudo chmod +x ./utils/bin-utils/*
 ```
-7. Open the repo in a terminal and run the script (no need to install any dependencies first, there are none):
+8. Make sure you are still inside the repo, then run the script (no need to install any dependencies first, there are none):
 ```shell
 node ./spm-level-dumper.mjs
 ```
@@ -40,7 +41,7 @@ Thanks to all the hard work by Andrew Ekstedt (magical), PistonMiner, Wiimm, and
 
 ## Troubleshooting
 - If you get a **"python: not found"** error, make sure Python 3+ is installed and available in your path. You might need to open the script in an editor and change the constant "PYTHON_BIN_NAME" from "python3" to "python".
-- For a **"Permission denied"** error, make sure you've first set the proper permissions on the binaries inside "./utils/bin-utils". See step 6 under "Usage" above.
+- For a **"Permission denied"** error, make sure you've first set the proper permissions on the binaries inside "./utils/bin-utils". See step 7 under "Usage" above.
 - If wit produces **"ERROR #76 [CAN'T OPEN FILE]"**, you probably just need to ensure you've provided the .wbfs file as described in steps 3 and 5 under "Usage" above.
 
 ## Can I just download the .obj files from somewhere?
